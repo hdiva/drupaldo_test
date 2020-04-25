@@ -1,0 +1,25 @@
+uuid: c221d039-5662-400d-b1e7-5e4c50f520bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.todo_item
+id: node.todo_item.default
+targetEntityType: node
+bundle: todo_item
+mode: default
+content:
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

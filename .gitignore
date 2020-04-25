@@ -3,3 +3,5 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
+/web/sites/*/*.local.php
+/web/sites/*/files

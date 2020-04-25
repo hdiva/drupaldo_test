@@ -1,0 +1,22 @@
+uuid: 2232a0d4-9fce-426b-a36e-06051dbc09c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.todo_item
+id: node.todo_item.promote
+field_name: promote
+entity_type: node
+bundle: todo_item
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

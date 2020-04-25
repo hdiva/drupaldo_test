@@ -1,0 +1,19 @@
+uuid: 39ca9b9c-a8c2-4fab-acfa-296acd84b644
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.todo_item
+  module:
+    - user
+id: node.todo_item.default
+targetEntityType: node
+bundle: todo_item
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
