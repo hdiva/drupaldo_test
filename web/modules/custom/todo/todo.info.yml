@@ -1,0 +1,4 @@
+name: TODO List
+type: module
+description: 'Provide functionality to manage a TODO list'
+core: 8.x

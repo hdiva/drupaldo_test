@@ -1,0 +1,7 @@
+todo.page:
+  path: '/todo'
+  defaults:
+    _form: '\Drupal\todo\Form\TodoForm'
+    _title: 'TODO'
+  requirements:
+    _permission: 'create todo_item content'
