@@ -1,17 +1,23 @@
 # drupaldo
 
-Install from config with:
+1. Install dependencies with composer:
+    ```
+    $ composer install
+    ```
+2. Create `/web/sites/default/settings.local.php`, and add database settings.
 
-```
-$ drush site:install --existing-config
-```
+3. Install the site from config with:
 
-Create a test user, and login:
+    ```
+    $ drush site:install --existing-config
+    ```
 
-```
-$ drush user:create test
-$ drush user:login --name=test
-```
+4. Create a test user, and login:
+
+    ```
+    $ drush user:create test
+    $ drush user:login --name=test
+    ```
 
 ## Demo
 ![Watch the video](docs/drupaldo-demo.gif)
