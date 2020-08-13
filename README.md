@@ -39,6 +39,15 @@ Try to make the current todo list look as close to this mockup as possible. Curr
     $ drush user:login --name=test
     ```
 
+6. Host the site:
+
+    ```
+    $ cd web
+    $ php -S localhost:8080
+    ```
+
+7. Visit localhost:8080 in browser, appending the path from drush user:login
+
 ## Demo
 ![Watch the video](docs/drupaldo-demo.gif)
 
