@@ -3,5 +3,8 @@ todo.page:
   defaults:
     _form: '\Drupal\todo\Form\TodoForm'
     _title: 'TODO'
+    # _controller: Drupal\todo\Controller\HelloWorldController::hello
+    # _controller: '\Drupal\todo\Controller\TodoController::myPage'
+    # _controller: '\Drupal\todo\Controller\TodoController::manageAction'
   requirements:
     _permission: 'create todo_item content'

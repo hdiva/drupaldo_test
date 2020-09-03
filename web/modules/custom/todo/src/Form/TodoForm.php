@@ -86,13 +86,17 @@ class TodoForm extends FormBase {
     foreach ($tasks as $task) {
       $form['tasks']['todo-' . $task->id()] = [
         'title' => [
-          '#markup' => $task->getTitle(),
+            '#type' => 'checkbox',
+           '#options' => $task->getTitle(),
+          '#title' => $task->getTitle(),
+          '#default_value' => FALSE,
+          //'#markup' => $task->getTitle(),
         ],
         'action' => [
           '#task_id' => $task->id(),
           '#type' => 'button',
           '#name' => 'todo-' . $task->id(),
-          '#value' => $this->t('Mark Complete'),
+          // '#value' => $this->t('Mark Complete'),
           '#ajax' => [
             'callback' => '::markComplete',
             'event' => 'click',
@@ -111,17 +115,19 @@ class TodoForm extends FormBase {
     $form['add']['title'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Title'),
+      '#placeholder' => $this->t('E.g. Adopt an owl'),
     ];
 
     $form['add']['submit'] = [
       '#type' => 'button',
-      '#value' => $this->t('Add Task'),
+      '#value' => $this->t('Add'),
       '#ajax' => [
         'callback' => '::addTask',
         'event' => 'click',
       ],
     ];
-
+    $form['#theme'] = 'todo_template';
+    
     return $form;
   }
 

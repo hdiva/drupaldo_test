@@ -1,0 +1,10 @@
+todolist:
+  css:
+    theme:
+      css/todo.css: {}
+  js:
+    js/todo.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
